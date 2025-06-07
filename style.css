@@ -1,14 +1,14 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-:root{
+:root {
   --font-montserrat: "Montserrat", sans-serif;
   --font-nunito: "Nunito", sans-serif;
   --logo-font: "Bowlby One", sans-serif;
@@ -28,30 +28,35 @@ html{
   color: var(--color-2-soft-white);
 }
 
-.main{
+.main {
   padding: 1rem 1rem;
   min-height: 100vh;
   font-family: var(--font-nunito);
   background: var(--color-6-light-sage);
-  background: linear-gradient(-1deg, rgb(192, 255, 193) 0%, rgb(227, 255, 226) 34%, rgba(239, 255, 235, 1) 100%);
+  background: linear-gradient(
+    -1deg,
+    rgb(192, 255, 193) 0%,
+    rgb(227, 255, 226) 34%,
+    rgba(239, 255, 235, 1) 100%
+  );
 }
 
 /* header styling starts here */
-.header{
+.header {
   position: sticky;
   top: 1rem;
   z-index: 7777;
   background-color: rgba(108, 117, 125, 0.3);
   backdrop-filter: blur(1rem);
-  padding: .6rem 2rem;
+  padding: 0.6rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 2.5rem;
-  box-shadow:  8px 8px 30px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.2);
 }
 
-.logo-wrapper{
+.logo-wrapper {
   display: flex;
   align-items: center;
   gap: 1rem;
@@ -60,44 +65,44 @@ html{
   color: var(--color-5-charcoal);
 }
 
-.logo-icon-wrapper{
+.logo-icon-wrapper {
   width: 2.5rem;
   display: flex;
   align-items: center;
 }
 
-.logo-icon-wrapper img{
+.logo-icon-wrapper img {
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.navigation-bar{
+.navigation-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
 
-.navigation-list{
+.navigation-list {
   display: flex;
   list-style-type: none;
   gap: 2rem;
   font-size: 1.7rem;
 }
 
-.nav-item-link{
+.nav-item-link {
   text-decoration: none;
   color: var(--color-5-charcoal);
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 
-.nav-item-link:hover{
+.nav-item-link:hover {
   color: var(--color-8-soft-yellow);
 }
 
-.cta-btn{
-  padding: .8rem 1.5rem;
+.cta-btn {
+  padding: 0.8rem 1.5rem;
   font-size: 1.9rem;
   font-weight: 700;
   border-radius: 1rem;
@@ -105,10 +110,10 @@ html{
   color: var(--color-2-soft-white);
   background-color: var(--color-3-vibrant-green);
   cursor: pointer;
-  transition-duration: .4s;
+  transition-duration: 0.4s;
 }
 
-.cta-btn:hover{
+.cta-btn:hover {
   background-color: var(--color-6-light-sage);
   outline: 1.5px solid var(--color-5-charcoal);
   color: var(--color-5-charcoal);
