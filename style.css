@@ -21,6 +21,7 @@ html {
   --color-7-warm-coral: #e76f51;
   --color-8-soft-yellow: #ffd166;
   --color-9-muted-teal: #40916c;
+  --color-10-deep-forest: rgb(27, 67, 50);
 }
 
 ::selection {
@@ -46,8 +47,8 @@ html {
   position: sticky;
   top: 1rem;
   z-index: 7777;
-  background-color: rgba(108, 117, 125, 0.3);
-  backdrop-filter: blur(1rem);
+  background-color: rgba(27, 67, 50, 0.1);
+  backdrop-filter: blur(0.9rem);
   padding: 0.6rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -61,8 +62,9 @@ html {
   align-items: center;
   gap: 1rem;
   font-family: var(--logo-font);
-  font-size: 2.3rem;
+  font-size: 1.8rem;
   color: var(--color-5-charcoal);
+  cursor: none;
 }
 
 .logo-icon-wrapper {
@@ -98,12 +100,12 @@ html {
 }
 
 .nav-item-link:hover {
-  color: var(--color-8-soft-yellow);
+  color: var(--color-6-light-sage);
 }
 
 .cta-btn {
   padding: 0.8rem 1.5rem;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 700;
   border-radius: 1rem;
   border: none;
@@ -114,16 +116,101 @@ html {
 }
 
 .cta-btn:hover {
+  border: none;
   background-color: var(--color-6-light-sage);
   outline: 1.5px solid var(--color-5-charcoal);
   color: var(--color-5-charcoal);
 }
 /* header styling ends here */
 
-/* Media Queries start here */
-@media (max-width: 54.875em) {
+/* Header Media Queries start here */
+@media (max-width: 53.125em) {
   .navigation-bar {
     display: none;
   }
 }
-/* Media Queries end here */
+/* Header Media Queries end here */
+
+/* Hero Section Styling Starts Here */
+.heading-content {
+  width: 70%;
+  margin-top: 6rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.heading-content h2 {
+  font-family: var(--font-montserrat);
+  font-size: 3rem;
+  font-weight: 900;
+  color: var();
+}
+
+.heading-content span {
+  font-size: 3.6rem;
+}
+
+.heading-content p {
+  /* width: 700px; */
+  /* margin: auto; */
+  margin-top: 2rem;
+  font-size: 1.6rem;
+}
+
+.hero-card-wrapper {
+  margin-top: 5rem;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.hero-card {
+  border: 1px solid var(--color-5-charcoal);
+  border-radius: 1rem;
+  width: 23rem;
+  height: 20rem;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(0.9rem);
+  box-shadow: 8px 8px 30px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.hero-card i {
+  font-size: 3.5rem;
+  color: var(--color-2-soft-white);
+  padding: 1rem;
+  background-color: var(--color-9-muted-teal);
+  border: 1px solid var(--color-5-charcoal);
+  border-radius: 50%;
+}
+
+.hero-card h3 {
+  margin-top: 2rem;
+  font-family: var(--font-montserrat);
+  text-transform: capitalize;
+  font-size: 1.8rem;
+}
+
+.hero-card p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.convert {
+  /* This is the center hero card holding the instant convert content */
+  transform: translateY(-4rem);
+}
+/* Hero Section Styling Ends Here */
+
+/* Hero section Media Queries Starts Here */
+@media screen and (max-width: 47.5em) {
+  .convert {
+    transform: none;
+  }
+}
+/* Hero section Media Queries Ends Here */
