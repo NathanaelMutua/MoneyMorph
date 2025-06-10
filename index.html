@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,7 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
-    <script defer type="module" src="/src/main.js"></script>
+    <script defer type="module" src="/main.js"></script>
     <title>MoneyMorph</title>
   </head>
   <body>
@@ -91,6 +91,30 @@
         </div>
       </section>
       <!-- Hero Section ends here -->
+
+      <!-- Currency Converter Section starts Here  -->
+      <section class="converter-section">
+        <div class="converter-header">
+          <h2 class="converter-section-header">Currency Converter</h2>
+        </div>
+        <form action="" class="currency-converter">
+          <input
+            type="text"
+            id="base-curr"
+            class="base-currency"
+            placeholder="base-currency"
+          />
+          <input type="number" id="base-amt" class="base-amount" placeholder="base-amount" />
+          <input
+            type="text"
+            id="convert-curr"
+            class="conversion-currency"
+            placeholder="conversion-currency"
+          />
+          <button id="convert-button" type="button">Convert</button>
+        </form>
+      </section>
+      <!-- Currency Converter Section ends Here  -->
     </section>
   </body>
 </html>
