@@ -218,6 +218,10 @@ html {
 /* Currency Conversion section starts here */
 .converter-section{
   margin-top: 5rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .converter-section-header{
@@ -230,6 +234,24 @@ html {
 .currency-converter{
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  padding: 2rem 6rem;
+  gap: 3rem;
+}
+
+.input{
+  height: 3.5rem;
+  width: 60rem;
+  margin: auto;
+  border: none;
+  font-family: var(--font-montserrat);
+  font-weight: 600;
+  text-align: center;
+}
+
+#convert-button{
+  height: 3rem;
+  width: 20rem;
+  margin: auto;
+  border: none;
 }
 /* Currency Conversion section ends here */
